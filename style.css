@@ -1,0 +1,249 @@
+:root {
+    --button-color: linear-gradient(135deg, #33d35e, #2ab6d9);
+    --primary-color: #2d314d;
+    --grey-color: #9597a5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    font-family:'Public Sans', sans-serif;
+
+    margin: auto;
+    background-color: #fafafa;
+    background-image: url('./images/bg-intro-desktop.svg');
+
+    background-position-x: 640px;
+    background-position-y: -180px;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    
+
+    overflow-x: hidden;
+}
+
+body::after {
+    content: "";
+    background-image: url('./images/image-mockups.png');
+    background-repeat: no-repeat;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 824px;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;    
+}
+
+.container {
+    width: 100%;
+    background-color: white;
+}
+
+header {
+    width: 90%;
+    height: 80px; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0 auto;
+
+    background-color: white;
+
+    z-index: 1;
+}
+
+header .logo img {
+   width: 139px;
+   height: 20px;
+
+}
+
+header nav ul {
+    display: flex;
+    
+}
+
+header nav ul li {
+    text-decoration-style: none;
+    list-style: none;
+
+    color: #9597A5;
+    font-family:'Public Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    padding-left: 30px;
+
+}
+
+.btn {
+    width: 163px;
+    height: 44px;
+    background-image: var(--button-color);
+    border: 0;
+    border-radius: 22px;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 2px;
+}
+
+main {
+    width: 50%;
+    height: 676px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main .main-text {
+    max-width: 567px;
+    width: 447px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+main .main-text h1 {
+    color: var(--primary-color);
+    font-size: 56px;
+    font-weight: 100;
+    line-height: 64px;
+}
+
+main .main-text p {
+    margin-top: 30px;
+    color: #9597a5;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+main .main-text button {
+    margin-top: 30px;
+    height: 44px;
+    width: 163px;
+
+    background-image: var(--button-color);
+}
+
+section {
+    background-color: #f4f5f7;
+    padding: 96px 165px;
+
+}
+
+section .section-1-header {
+    max-width: 635px;
+}
+
+.title {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: 100;
+}
+
+section .section-1-header p {
+    margin-top: 16px;
+    font-size: 18px;
+    color: var(--grey-color);
+    line-height: 28px;
+    font-weight: 400;
+}
+
+section .section-1-cards {
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+section .section-1-cards h2 {
+    padding-top: 40px;
+    color: var(--primary-color);
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+section .section-1-cards p {
+    padding-top: 26px;
+    color: var(--grey-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    text-align: left;
+}
+
+.section-2 {
+    background-color: #fafafa;
+    padding: 96px 165px;
+
+}
+
+.section-2-cards {
+    margin-top: 32px;
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);   
+    grid-gap: 30px;
+}
+
+.section-2-card {
+    width: 255px;
+    height: 395px;
+    background-color: #ffffff;
+}
+
+.section-2-card img {
+    width: 255px;
+    height: 200px;
+}
+
+.section-2-card .text-wrapper {
+    padding: 25px 24px;
+}
+
+.section-2-card h4 {
+    
+    font-size: 10px;
+    color: var(--grey-color);
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.section-2-card h2 {
+    padding-top: 8px;
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--primary-color);
+    line-height: 20px;
+}
+
+.section-2-card p {
+    padding-top: 8px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--grey-color);
+}
