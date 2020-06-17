@@ -1,0 +1,175 @@
+:root {
+    --button-color: linear-gradient(135deg, #33d35e, #2ab6d9);
+    --primary-color: #2d314d;
+    --grey-color: #9597a5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+}
+
+/* -----------------------------
+
+        GENERAL BUTTON CONFIG
+
+--------------------------------*/
+
+.btn {
+    width: 163px;
+    height: 44px;
+    background-image: var(--button-color);
+    border: 0;
+    border-radius: 22px;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 2px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 40%;
+}
+
+/* ----------------------------
+
+        HEADER CONTENT
+
+-------------------------------*/
+
+header {
+    width: 100%;
+    background-color: white;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin: auto;
+    margin-top: 1%;
+    background-color: white;
+}
+
+header .container .logo img {
+    width: 139px;
+    height: 20px;
+ 
+}
+
+header .container nav ul {
+    display: flex;
+    
+}
+
+header .container nav ul li {
+    text-decoration-style: none;
+    list-style: none;
+
+    color: #9597A5;
+    font-family:'Public Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    padding-left: 30px;
+   
+}
+
+header .container nav ul li a {
+    text-decoration: none;
+    color:  #9597A5;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+header nav ul li a:hover {
+    border-bottom: 4px solid  #33d35e;
+}
+
+/* -------------------------------------
+
+            HERO SECTION 
+
+----------------------------------------*/
+main .hero-section {
+    display: flex;
+    flex-direction: row;
+    background-color: #fafafa;
+}
+
+main .hero-section .hero-section--text {
+    /* width: 567px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 165px;
+}
+
+main .hero-section .hero-section--text h1 {
+    color: var(--primary-color);
+    font-size: 56px;
+    font-weight: 100;
+    line-height: 64px;
+    height: auto;
+}
+
+main .hero-section .hero-section--text p {
+    margin-top: 30px;
+    color: #9597a5;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+main .hero-section .hero-section--text button {
+    margin-top: 30px;
+    height: 44px;
+    width: 163px;
+
+    background-image: var(--button-color);
+}
+
+/* --------------------------------
+
+            PSEUDO ELEMENTS 
+
+-----------------------------------*/
+.hero-section::after {
+    content: "";
+    background-color: yellow;
+    width: 100%;
+
+    background-image: url('./images/bg-intro-desktop.svg');
+}
+
+

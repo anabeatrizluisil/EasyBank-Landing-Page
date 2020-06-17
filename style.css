@@ -20,7 +20,8 @@ a {
     text-decoration: none;
 }
 
-body {
+/* body {
+    
     font-family:'Public Sans', sans-serif;
 
     margin: auto;
@@ -35,11 +36,16 @@ body {
     
 
     overflow-x: hidden;
+} */
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    min-height: 100vh;
 }
 
-body::after {
+/* body::after {
     content: "";
-    background-image: url('./images/image-mockups.png');
+    background-image: url('./images/image-mockups.png'); 
     background-repeat: no-repeat;
 
 
@@ -51,7 +57,7 @@ body::after {
     height: 901px;
 
     z-index: 10;    
-}
+} */
 
 button {
     cursor: pointer;
@@ -73,7 +79,7 @@ button:hover {
 
 header {
     
-    height: 80px; 
+    height: 10.6vh; 
 
     display: flex;
     flex-direction: row;
@@ -139,15 +145,21 @@ button:hover {
     background-color: black;
 }
 
-main {
-    width: 50%;
-    height: 676px;
+/* --------------------------
+
+      HERO-SECTION CONTENT 
+
+ -----------------------------*/
+
+main .hero-section {
+    
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    
 }
 
-main .main-text {
+main .hero-section .main-text {
+    background-color: yellow;
     max-width: 567px;
     width: 447px;
     display: flex;
@@ -156,14 +168,14 @@ main .main-text {
     
 }
 
-main .main-text h1 {
+main .hero-section .main-text h1 {
     color: var(--primary-color);
     font-size: 56px;
     font-weight: 100;
     line-height: 64px;
 }
 
-main .main-text p {
+main .hero-section .main-text p {
     margin-top: 30px;
     color: #9597a5;
     font-size: 18px;
@@ -171,7 +183,7 @@ main .main-text p {
     line-height: 28px;
 }
 
-main .main-text button {
+main .hero-section .main-text button {
     margin-top: 30px;
     height: 44px;
     width: 163px;
@@ -425,3 +437,4 @@ footer .footer-wrap-3 p {
     color: #ffffff;
     opacity: 50%;
 }
+
