@@ -26,7 +26,7 @@ body {
     font-family: 'Public Sans', sans-serif;
     min-height: 100vh;
 
-    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .container {
@@ -55,7 +55,7 @@ body {
     cursor: pointer;
 }
 
-button:hover {
+.btn:hover {
     opacity: 40%;
 }
 
@@ -66,7 +66,7 @@ button:hover {
 -------------------------------*/
 
 header {
-    width: 100%;
+    padding: 18px 0;
     background-color: white;
 
 }
@@ -74,12 +74,10 @@ header {
 header .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     
     margin: auto;
-    margin-top: 1%;
-    background-color: yellow;
 }
 
 header .container .logo img {
@@ -200,5 +198,61 @@ main .hero-section .hero-section--text button {
     top: 0;
     right: 0;
 
-    z-index: 10;
+    z-index: 22;
+}
+
+/* -----------------------------------
+
+            EASYBANK SECTION
+
+------------------------------------ */
+
+.easybank-section {
+    background-color: #f4f5f7;
+    display: flex;
+    padding: 96px 0;
+    justify-content: center;
+}
+
+.easybank-section .easybank-section-title {
+    max-width: 635px;
+}
+
+.title {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.easybank-section .easybank-section-title p {
+    margin-top: 16px;
+    font-size: 18px;
+    color: var(--grey-color);
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.easybank-section .easybank-cards {
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.easybank-section .easybank-cards h2 {
+    padding-top: 40px;
+    color: var(--primary-color);
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.easybank-section .easybank-cards p {
+    padding-top: 26px;
+    color: var(--grey-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    text-align: left;
 }
