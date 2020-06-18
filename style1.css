@@ -349,7 +349,8 @@ footer .container {
 footer .footer-wrap-start {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -368,16 +369,26 @@ footer .footer-wrap-start .footer-logo img {
 svg {
     width: 20px;
     height: 20px;
+
+    cursor: pointer;
 }
 
-svg:hover {
-    fill: green;
+#svg:hover {
+    fill: #53e87b;
 }
 
+footer .social-icons {
+    margin-top: 55px;
+}
+
+footer .social-icons a {
+    padding-left: 13px;
+}
 
 footer .footer-menu {
     padding: 48px 0;
 }
+
 footer .footer-menu ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
