@@ -177,9 +177,10 @@ main .hero-section .hero-section--text button {
 
 main .hero-section .container {
     display: flex;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+    padding: 170px 0;
 }
 
 main .hero-section-background {
@@ -187,13 +188,14 @@ main .hero-section-background {
 
     
     width: 100%;
-    height: 939px;
+    height: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 80%;
+    background-position: 20% 63%;
 
-    position: relative;
+    position: absolute;
     top: 0;
-    right: 0;
+    right: -40%;
     z-index: 2;
    }
 
@@ -201,52 +203,15 @@ main .hero-section-background {
     content: '';
     position: absolute;
     background-image: url("./images/image-mockups.png");
+    background-size: 45%;
+    background-position: left center;
     height: 100%;
     width: 100%;
-    background-size: contain;
     background-repeat: no-repeat;
     z-index: 3;
     top: 0;
-    left: 0;
+    right: -15%;
    }
-
-
-/* --------------------------------
-
-            PSEUDO ELEMENTS 
-
------------------------------------*/
-/* .hero-section::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-
-    background-image: url('./images/bg-intro-desktop.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 660px 46%;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.hero-section::before {
-    content: "";
-    width: 100%;
-    height: 939px;
-
-    background-image: url('./images/image-mockups.png');
-    background-repeat: no-repeat;
-    
-    background-position: 55vw -15vh;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    z-index: 10;
-} */
 
 /* -----------------------------------
 
