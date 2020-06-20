@@ -25,6 +25,7 @@
    main .hero-section .container {
        display: flex;
        flex-direction: column;
+       padding-top: 0;
    }
 
    /*----------------------------
@@ -37,25 +38,39 @@
        padding: 0;
        margin: 0;
    }
-
    
    main .hero-section-background {
-    background-image: url("./images/bg-intro-mobile.svg");
-
-    height: 100%;
-    width: 100%;
+    position: relative;
+    background-image: url('./images/bg-intro-mobile.svg');
+    background-size: cover;
     background-repeat: no-repeat;
-    
-    background-position: 0% -60%;
-    background-size: 100%;
 
-    position: absolute;
+    order: 1;    
+    min-height: 17.5rem;
+    
+    background-position: center center;
+    
     top: 0;
     right: 0;
-    z-index: 2;
+
    }
 
-   main .hero-section-background::after {
+   main .hero-section-background::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('./images/image-mockups.png');
+    background-size: 94%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+    top: 0;
+    right: 0;
+
+   }
+
+   /* main .hero-section-background::after {
     content: '';
     position: absolute;
     background-image: url("./images/image-mockups.png");
@@ -70,12 +85,14 @@
     z-index: -3;
     top: -40%;
     right: 0;
-   }
+   } */
 
    main .hero-section .hero-section--text {
-       width: 327px; 
+       padding: 0 24px;
        align-items: center;
        text-align: center;
+
+       order: 2;
    }
 
    main .hero-section .hero-section--text h1 {
