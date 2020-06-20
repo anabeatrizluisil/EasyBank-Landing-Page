@@ -1,7 +1,7 @@
 @media (min-width: 375px) and (max-width: 600px) {
-
+   
     .container {
-        max-width: 279px;
+        padding: 0 48px;
         width: 100%;
         margin: 0 auto;
     }
@@ -25,13 +25,42 @@
    main .hero-section .container {
        display: flex;
        flex-direction: column;
-       padding: 0;
    }
 
-   main .hero-section .hero-section-background img {
-        width: 327px;
-        height: 402px;
+   /*----------------------------
 
+                BACKGROUND
+
+   -------------------------------*/
+   main .hero-section {
+       height: auto;
+       padding: 0;
+       margin: 0;
+   }
+
+   
+   main .hero-section-background {
+    background-image: url("./images/bg-intro-mobile.svg");
+
+    height: 397px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+   }
+
+   main .hero-section-background::after {
+    content: '';
+    position: absolute;
+    background-image: url("./images/image-mockups.png");
+    height: 402px;
+    width: 327px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 3;
+    top: 0;
+    left: 0;
    }
 
    main .hero-section .hero-section--text {
@@ -55,7 +84,7 @@
             PSEUDO ELEMENT 
 
    ------------------------------*/
-   .hero-section-background::before {
+    /* .hero-section-background::before {
         content: "";
         background-image: url('./images/bg-intro-mobile.svg');
         width: 100%;
@@ -64,13 +93,13 @@
         background-repeat: no-repeat;
         /* background-size: 754px 397px; */
 
-        position: absolute;
+        /*position: absolute;
         top: 0;
         right: 0;
 
         z-index: 1;
 
-    }
+    }  */
 
     /*-----------------------------
 
@@ -122,6 +151,11 @@
 
     .articles-section {
         flex-direction: column;
+        
+    }
+
+    .articles-section .container {
+        padding: 0 24px;
     }
 
     .articles-section .title {
@@ -136,6 +170,13 @@
 
     .articles-section .articles-cards .article-card {
         margin-bottom: 24px;
+        width: 100%;
+    }
+
+    .article-card img {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px 5px 0 0;
     }
 
 

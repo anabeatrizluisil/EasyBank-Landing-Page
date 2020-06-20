@@ -126,8 +126,6 @@ main .hero-section {
     flex-direction: row;
     background-color: #fafafa;
 
-    padding: 170px 0;
-
     position: relative;
 
     justify-content: center;
@@ -170,6 +168,48 @@ main .hero-section .hero-section--text button {
     pointer-events: none;
     
 }
+
+/*--------------------------------
+
+        BACKGROUNDS
+
+---------------------------------*/
+
+main .hero-section .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .hero-section-background {
+    background-image: url("./images/bg-intro-desktop.svg");
+
+    
+    width: 100%;
+    height: 939px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 2;
+   }
+
+   main .hero-section-background::after {
+    content: '';
+    position: absolute;
+    background-image: url("./images/image-mockups.png");
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+    top: 0;
+    left: 0;
+   }
+
 
 /* --------------------------------
 
