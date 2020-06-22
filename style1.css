@@ -54,6 +54,8 @@ body {
     line-height: 2px;
 
     cursor: pointer;
+    padding: 24px 0;
+    text-align: center;
 }
 
 .btn:hover {
@@ -130,15 +132,17 @@ main .hero-section {
     position: relative;
 
     justify-content: center;
+
+    overflow: hidden;
 }
 
 main .hero-section .hero-section--text {
-    /* width: 447px;  */
-    display: flex;
+     /* width: 447px; */
+    /* displ  ay: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
 
-    flex: 1;
+    /* flex: 1; */
 
 }
 

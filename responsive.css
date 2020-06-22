@@ -219,6 +219,10 @@
         justify-content: center;
     }
 
+    footer .footer-wrap-start {
+        text-align: center;
+    }
+
     footer .social-icons a {
         padding-left: 16px;
     }
@@ -238,4 +242,10 @@
         align-items: center;
     }
 
+}
+
+@media (min-width: 700px) {
+    main .hero-section .hero-section--text {
+        width: 447px;
+    }
 }
